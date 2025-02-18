@@ -5,10 +5,12 @@ import emailjs from '@emailjs/browser';
 
 export default function index() {
 
-    const form = useRef();
 
+  
+  const form = useRef();
+  
   const sendEmail = (e) => {
-    e.preventDefault();
+      e.preventDefault();
 
     emailjs
       .sendForm('service_l187909', 'template_p8u031v', form.current, {
